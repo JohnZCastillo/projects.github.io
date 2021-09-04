@@ -1,1 +1,81 @@
 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.main{
+    background-color:  hsl(222, 26%, 31%);
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper > .top{
+    margin-top: 10px;
+}
+.wrapper > .middle{
+    border-radius: 5px;
+    width: 90%;
+    height: 80px;
+    background-color: hsl(224, 36%, 15%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+.wrapper > .bottom{
+    margin-top: 20px;
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    background-color: hsl(223, 31%, 20%);
+    padding: 10px;
+    border-radius: 5px;
+    grid-template-areas: 'button-1 button-2 button-3 button-4'
+                         'button-5 button-6 button-7 button-8'
+                         'button-9 button-10 button-11 button-12'
+                         'button-13 button-14 button-15 button-16'
+                         'button-17 button-17 button-18 button-18';
+}  
+
+.wrapper > .bottom >div{
+    color:hsl(225, 21%, 49%) ;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 1px hsl(224, 28%, 35%);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.wrapper > .bottom >div:hover{
+    background-color: hsl(223, 31%, 20%);
+    color: white;
+}
+
+
+.wrapper > .bottom > #item-reset{
+    grid-area: button-17;
+}
+.wrapper > .bottom > #item-equal{
+    grid-area: button-18;
+}
+
